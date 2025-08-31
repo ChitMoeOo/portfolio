@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@mariohamann/activity-graph/dist/activity-graph.min.js"></script>
+</head>
+<body class="">
+    
+    <div class="container">
+        
+        <!-- ------ Navbar ------ -->
+
+        <nav class="navbar"> 
+            <div class="box theme">
+                <div class="item" onclick="theme()">
+                    <ion-icon id="lightBtn" name="sunny-outline"></ion-icon>
+                    <ion-icon id="darkBtn" name="moon-outline" style="display: none;"></ion-icon>
+                </div>
+            </div>
+            <div class="box nav">
+                <div class="item active">
+                    <a href="#about">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                        <p>about</p>
+                    </a>
+                    <div class="divider rtl"></div>
+                </div>
+                <div class="item">
+                    <a href="#resume">
+                        <ion-icon name="file-tray-full-outline"></ion-icon>
+                        <p>resume</p>
+                    </a>
+                    <div class="divider rtl"></div>
+                </div>
+                <div class="item">
+                    <a href="#projects">
+                        <ion-icon name="layers-outline"></ion-icon>
+                        <p>projects</p>
+                    </a>
+                    <div class="divider rtl"></div>
+                </div>
+                <div class="item">
+                    <a href="#blogs">
+                        <ion-icon name="reader-outline"></ion-icon>
+                        <p>blogs</p>
+                    </a>
+                    <div class="divider rtl"></div>
+                </div>
+                <div class="item">
+                    <a href="#contact">
+                        <ion-icon name="paper-plane-outline"></ion-icon>
+                        <p>contact</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ------ Profile ------ -->
+
+        <div class="box profile">
+            <img src="img/cover.jpg" class="header" alt="cover">
+            <img src="img/profile.jpg" class="img" alt="profile">
+            <h2>Chit Moe Oo</h2>
+            <p id="typed" class="colored">Full-Stack Web Developer</p>
+
+            <ul>
+                <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+
+            <div class="footer">
+                <div class="divider rtl"></div>
+                <table>
+                    <tr>
+                        <td><a href="#">My Resume <ion-icon name="file-tray-full-outline"></ion-icon></a></td>
+                        <td><a href="#">Contact Me <ion-icon name="call-outline"></ion-icon></a></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+        <!-- ------ Body Content ------ -->
+
+        <div class="box content">
+            <div class="wrapper">
+                <h2>Hey <span class="colored">there!</span> 👋</h2>
+                <div class="divider ltr"></div>
+                <p>I'm thrilled to tell you a bit about myself. I have over six years of IT experience, specializing in <span class="colored">PHP, Database Development, and open-source frameworks. </span> If you're in need of a motivated team player, let's connect!</p>
+            
+                <!-- Achivements -->
+
+                <section class="achivements">
+                    <div>
+                        <h3><ion-icon name="layers-outline"></ion-icon>2K+</h3>
+                        <p>Website Designed</p>
+                    </div>
+                    <div>
+                        <h3><ion-icon name="briefcase-outline"></ion-icon>5+</h3>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div>
+                        <h3><ion-icon name="rocket-outline"></ion-icon>4K</h3>
+                        <p>Completed Projects</p>
+                    </div>
+                </section>
+
+                <!-- Skills -->
+
+                <h2>My <span class="colored">Skills</span></h2>
+                <div class="divider ltr"></div>
+
+                <section class="skills">
+                    <div><ion-icon name="logo-html5"></ion-icon><p>HTML5</p></div>
+                    <div><ion-icon name="logo-css3"></ion-icon><p>CSS</p></div>
+                    <div><ion-icon name="logo-react"></ion-icon><p>React</p></div>
+                    <div><ion-icon name="logo-python"></ion-icon><p>Python</p></div>
+                    <div>
+                        <div class="circle" style="--percent:65%">
+                            <h4>65 <small>%</small></h4>
+                        </div>
+                        <p>MySQL</p>
+                    </div>
+                    <div>
+                        <div class="circle" style="--percent:85%">
+                            <h4>85 <small>%</small></h4>
+                        </div>
+                        <p>MySQL</p>
+                    </div>
+                    <div>
+                        <div class="progress-bar">
+                            <p>Node Js <span>90%</span></p>
+                            <progress max="100" value="90"></progress>
+                        </div>
+                        <div class="progress-bar">
+                            <p>PostgreSQL <span>75%</span></p>
+                            <progress max="100" value="75"></progress>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experience -->
+
+                <h1>My <span class="colored">Experience</span></h1>
+                <div class="divider ltr"></div>
+
+                <section class="experiences">
+                    <div class="experience">
+                        <h2>Senior Python Developer</h2>
+                        <h4>Google Inc. <span class="date">Oct, 2018</span> &#x26AC; <span class="date">Dec, 2020</span></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto magnam incidunt magni qui dignissimos minima non repellat saepe dolorum a, cum vitae doloremque, illo rem expedita exercitationem eaque pariatur labore?</p>
+                    </div>
+                    <div class="experience">
+                        <h2>Database Developer</h2>
+                        <h4>Framework Inc. <span class="date">Oct, 2012</span> &#x26AC; <span class="date">Dec, 2018</span></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto magnam incidunt magni qui dignissimos minima non repellat saepe dolorum a, cum vitae doloremque, illo rem expedita exercitationem eaque pariatur labore?</p>
+                    </div>
+                    <div class="experience">
+                        <h2>Full Stack Web Developer</h2>
+                        <h4>Integrity Software, Icc. <span class="date">Oct, 2010</span> &#x26AC; <span class="date">Dec, 2014</span></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto magnam incidunt magni qui dignissimos minima non repellat saepe dolorum a, cum vitae doloremque, illo rem expedita exercitationem eaque pariatur labore?</p>
+                    </div>
+
+                    <h1>My <span class="colored">Contributions</span></h1>
+                    <div class="divider ltr"></div>
+
+                </section>
+
+                <!-- Contribution -->
+                    
+                <section class="contribution">
+                    <div class="wrapper">
+                        <activity-graph
+                            range-start="2021-01-01"
+                            range-end="2021-12-31"
+                            activity-levels="0,1,2,3,5"
+                            activity-data="
+                                2021-01-01,2021-01-02,2021-01-03,2021-01-04,2021-01-05,2021-01-06,2021-01-07,2021-01-08,2021-01-09,2021-01-10,
+                                2021-01-11,2021-01-12,2021-01-13,2021-01-14,2021-01-15,2021-01-16,2021-01-17,2021-01-18,2021-01-19,2021-01-20,
+                                2021-01-21,2021-01-22,2021-01-23,2021-01-24,2021-01-25,2021-01-26,2021-01-27,2021-01-28,2021-01-29,2021-01-30,
+
+                                2021-02-01,2021-02-02,2021-02-03,2021-02-04,2021-02-05,2021-02-06,2021-02-07,2021-02-08,2021-02-09,2021-02-10,
+                                2021-02-11,2021-02-12,2021-02-13,2021-02-14,2021-02-15,2021-02-16,2021-02-17,2021-02-18,2021-02-19,2021-02-20,
+                                2021-02-21,2021-02-22,2021-02-23,2021-02-24,2021-02-25,2021-02-26,2021-02-27,2021-02-28,
+
+                                2021-03-01,2021-03-02,2021-03-03,2021-03-04,2021-03-05,2021-03-06,2021-03-07,2021-03-08,2021-03-09,2021-03-10,
+                                2021-03-11,2021-03-12,2021-03-13,2021-03-14,2021-03-15,2021-03-16,2021-03-17,2021-03-18,2021-03-19,2021-03-20,
+                                2021-03-21,2021-03-22,2021-03-23,2021-03-24,2021-03-25,2021-03-26,2021-03-27,2021-03-28,2021-03-29,2021-03-30,
+
+                                2021-04-01,2021-04-02,2021-04-03,2021-04-04,2021-04-05,2021-04-06,2021-04-07,2021-04-08,2021-04-09,2021-04-10,
+                                2021-04-11,2021-04-12,2021-04-13,2021-04-14,2021-04-15,2021-04-16,2021-04-17,2021-04-18,2021-04-19,2021-04-20,
+                                2021-04-21,2021-04-22,2021-04-23,2021-04-24,2021-04-25,2021-04-26,2021-04-27,2021-04-28,2021-04-29,2021-04-30,
+
+                                2021-05-01,2021-05-02,2021-05-03,2021-05-04,2021-05-05,2021-05-06,2021-05-07,2021-05-08,2021-05-09,2021-05-10,
+                                2021-05-11,2021-05-12,2021-05-13,2021-05-14,2021-05-15,2021-05-16,2021-05-17,2021-05-18,2021-05-19,2021-05-20,
+                                2021-05-21,2021-05-22,2021-05-23,2021-05-24,2021-05-25,2021-05-26,2021-05-27,2021-05-28,2021-05-29,2021-05-30,
+
+                                2021-06-01,2021-06-02,2021-06-03,2021-06-04,2021-06-05,2021-06-06,2021-06-07,2021-06-08,2021-06-09,2021-06-10,
+                                2021-06-11,2021-06-12,2021-06-13,2021-06-14,2021-06-15,2021-06-16,2021-06-17,2021-06-18,2021-06-19,2021-06-20,
+                                2021-06-21,2021-06-22,2021-06-23,2021-06-24,2021-06-25,2021-06-26,2021-06-27,2021-06-28,2021-06-29,2021-06-30
+                            "
+                        />
+                    </div>
+                </section>
+
+                <!-- Projects -->
+
+                <h1>My <span class="colored">Projects</span></h1>
+                <div class="divider ltr"></div>
+
+                <section class="projects">
+                    <div class="project-1">
+                        <img src="img/cover.jpg" alt="">
+                        <h3>Project <span class="colored">Title-1</span></h3>
+                    </div>
+                    <div class="project-2">
+                        <img src="img/cover.jpg" alt="">
+                        <h3>Project <span class="colored">Title-2</span></h3>
+                    </div>
+                    <div class="project-3">
+                        <img src="img/cover.jpg" alt="">
+                        <h3>Project <span class="colored">Title-3</span></h3>
+                    </div>
+                    <div class="project-4">
+                        <img src="img/cover.jpg" alt="">
+                        <h3>Project <span class="colored">Title-4</span></h3>
+                    </div>
+                    <div class="project-5">
+                        <img src="img/cover.jpg" alt="">
+                        <h3>Project <span class="colored">Title-5</span></h3>
+                    </div>
+                    <div class="project-6">
+                        <img src="img/cover.jpg" alt="">
+                        <h3>Project <span class="colored">Title-6</span></h3>
+                    </div>
+                    <div class="project-7">
+                        <img src="img/cover.jpg" alt="">
+                        <h3>Project <span class="colored">Title-7</span></h3>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
