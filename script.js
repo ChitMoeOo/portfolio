@@ -23,3 +23,13 @@ function theme() {
         lightBtn.style.display = 'none';
     }
 }
+
+//Menu toggle
+const menuItems = document.getElementById('.nav .item');
+
+menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+        menuItems.forEach(item => item.classList.remove('active'));
+        item.classList.add('active');
+    }); 
+});
